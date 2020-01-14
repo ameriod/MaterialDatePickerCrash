@@ -62,6 +62,5 @@ data class DayRangeValidator(
     override fun isValid(date: Long): Boolean =
         (startTimeMilliseconds..endTimeMilliseconds).contains(date) || startTimeMilliseconds == date || endTimeMilliseconds == date
 
-
 }
 
